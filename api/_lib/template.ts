@@ -10,7 +10,7 @@ const emojify = (text: string) => twemoji.parse(text, twOptions);
 const nhg = readFileSync(`${__dirname}/../_fonts/neue-haas-grotesk-display.woff2`).toString('base64');
 
 function getCss(fontSize: string) {
-    let background = '#D1D5DB';
+    // let background = '#D1D5DB';
     let foreground = 'black';
 
     return `
@@ -21,8 +21,8 @@ function getCss(fontSize: string) {
     }
 
     body {
-        background: ${background};
-        background-size: 100px 100px;
+        background: url("https://www.ceiphr.com/bg.jpg");
+        background-size: cover;
         height: 100vh;
         display: flex;
         text-align: center;
@@ -60,7 +60,7 @@ function getCss(fontSize: string) {
 export function getHtml(parsedReq: ParsedRequest) {
     const {text, md, fontSize, images, widths, heights} = parsedReq;
     return `<!DOCTYPE html>
-<html>
+<html lang="en">
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">

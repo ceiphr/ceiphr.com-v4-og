@@ -1,11 +1,11 @@
-import { IncomingMessage } from 'http';
-import { parse } from 'url';
-import { ParsedRequest, Theme } from './types';
+import {IncomingMessage} from 'http';
+import {parse} from 'url';
+import {ParsedRequest} from './types';
 
 export function parseRequest(req: IncomingMessage) {
     console.log('HTTP ' + req.url);
-    const { pathname, query } = parse(req.url || '/', true);
-    const { fontSize, images, widths, heights, theme, md } = (query || {});
+    const {pathname, query} = parse(req.url || '/', true);
+    const {fontSize, images, widths, heights, theme, md} = (query || {});
 
     if (Array.isArray(fontSize)) {
         throw new Error('Expected a single fontSize');
@@ -13,7 +13,7 @@ export function parseRequest(req: IncomingMessage) {
     if (Array.isArray(theme)) {
         throw new Error('Expected a single theme');
     }
-    
+
     const arr = (pathname || '/').slice(1).split('.');
     let extension = '';
     let text = '';
@@ -36,7 +36,7 @@ export function parseRequest(req: IncomingMessage) {
         widths: getArray(widths),
         heights: getArray(heights),
     };
-    parsedRequest.images = getDefaultImages(parsedRequest.images, parsedRequest.theme);
+    parsedRequest.images = getDefaultImages(parsedRequest.images);
     return parsedRequest;
 }
 
@@ -50,13 +50,9 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
     }
 }
 
-function getDefaultImages(images: string[], theme: Theme): string[] {
-    const defaultImage = theme === 'light'
-        ? 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg'
-        : 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg';
+function getDefaultImages(images: string[]): string[] {
+    const defaultImage = 'https://www.ceiphr.com/logo.svg';
 
-    if (!images || !images[0]) {
-        return [defaultImage];
-    }
+    if (!images || !images[0]) return [defaultImage];
     return images;
 }

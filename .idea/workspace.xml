@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdff8e5d-bb08-4401-9f3a-fffc882d540f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/_fonts/neue-haas-grotesk-display.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/CODEOWNERS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/_fonts/Inter-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/_fonts/Inter-License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/_fonts/Inter-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/_fonts/Vera-License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/_fonts/Vera-Mono.woff2" beforeDir="false" />
+    <list default="true" id="fdff8e5d-bb08-4401-9f3a-fffc882d540f" name="Default Changelist" comment="Slimmed down project. Tweaked template and parser.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/_lib/parser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/_lib/parser.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/_lib/template.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/_lib/template.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +51,18 @@
       <updated>1624475111586</updated>
       <workItem from="1624475113323" duration="1197000" />
       <workItem from="1624478168945" duration="2082000" />
-      <workItem from="1624504524790" duration="6314000" />
+      <workItem from="1624504524790" duration="7041000" />
+      <workItem from="1624599680615" duration="172000" />
+      <workItem from="1624661719296" duration="1589000" />
     </task>
+    <task id="LOCAL-00001" summary="Slimmed down project. Tweaked template and parser.">
+      <created>1624510941890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624510941890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +82,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Slimmed down project. Tweaked template and parser." />
+    <option name="LAST_COMMIT_MESSAGE" value="Slimmed down project. Tweaked template and parser." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
